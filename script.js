@@ -335,9 +335,9 @@ document.getElementById("startQuiz").addEventListener("click", function () {
     } else if (currentMode === 'verbi') {
         shuffledWords = [...verbi];
     } else if (currentMode === 'congiunzioni_e_avverbi') {
-        shuffledWords = [...complementi];
+        shuffledWords = [...congiunzioni_e_avverbi];
     } else {
-        shuffledWords = [...nomi, ...aggettivi, ...verbi, ...complementi];
+        shuffledWords = [...nomi, ...verbi, ...congiunzioni_e_avverbi];
     }
 
     shuffle(shuffledWords);
