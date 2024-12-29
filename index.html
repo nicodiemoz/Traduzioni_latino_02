@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -8,6 +9,14 @@
 </head>
 <body>
     <h1>Quiz di Latino</h1>
+    
+    <!-- Nuova selezione per la visualizzazione -->
+    <label for="visualizzazione">Scegli la visualizzazione:</label>
+    <select id="visualizzazione">
+        <option value="parola">Parola prima</option>
+        <option value="traduzione">Traduzione prima</option>
+    </select>
+    
     <label for="modalita">Scegli la modalità:</label>
     <select id="modalita">
         <option value="nomi">Nomi</option>
@@ -15,12 +24,12 @@
         <option value="congiunzioni_e_avverbi">congiunzioni_e_avverbi</option>
         <option value="tutto">Tutto</option>
     </select>
-    <button id="startQuiz">Inizia Quiz</button>
+    <button id="startQuiz" style="font-size: 15px;">Inizia Quiz</button>
 
-    <div id="quizContainer" style="display:none;">
-        <p id="quizPrompt" style="font-size: 20px; font-weight: bold;"></p>
-        <button id="nextBtn" style="margin-top: 10px;">Vedi Risposta</button>
-        <p id="quizAnswer" style="display:none; font-weight: bold;"></p>
+    <div id="quizContainer" style="display:none; margin-top: 5px;">
+        <p id="quizPrompt" style="font-size: 30px; font-weight: bold;"></p>
+        <button id="nextBtn" style="font-size: 15px; margin-top: 10px;">Vedi Risposta</button>
+        <p id="quizAnswer" style="font-size: 25px; font-weight: bold;"></p>
     </div>
 
     <script src="script.js"></script>
